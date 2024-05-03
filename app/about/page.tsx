@@ -1,5 +1,9 @@
 const About = () => {
-  return <h1>anout</h1>
-}
- 
-export default  About;
+  return (
+    <button className="rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700">
+      rd
+    </button>
+  );
+};
+
+export default About;
