@@ -3,10 +3,9 @@ import CategoryItem from "./category-item";
 
 const CategoryList = async () => {
   const categories = await db.category.findMany();
-  console.log(categories);
 
   return (
-    <div className="grid grid-cols-2 gap-3">
+    <div className="flex gap-3 overflow-x-scroll pb-1 scrollbar-thin">
       {categories.map((category) => (
         <CategoryItem key={category.id} category={category} />
       ))}
