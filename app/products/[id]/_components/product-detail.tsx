@@ -135,14 +135,9 @@ const ProductDetail = ({
                 <span className="text-xs">Entrega</span>
                 <TimerIcon size={14} />
               </div>
-
-              {Number(product.restaurant.deliveryTimeMinutes) > 0 ? (
-                <p className="text-xs font-semibold">
-                  {Number(product.restaurant.deliveryTimeMinutes)}min
-                </p>
-              ) : (
-                <p className="text-xs font-semibold">Grátis</p>
-              )}
+              <p className="text-xs font-semibold">
+                {Number(product.restaurant.deliveryTimeMinutes)} min
+              </p>
             </div>
           </div>
         </Card>
